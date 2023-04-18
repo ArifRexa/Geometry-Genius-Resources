@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style/style.css">
+    <title>Geometry-Genius-Resources</title>
+</head>
+
+<body class="block mx-12">
+<!-- ===========================  Header  =============================-->
+    <nav class=" bg-white dark:bg-blue-200 rounded-lg my-12">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+            <a href="https://flowbite.com/" class="flex items-center">
+                <span class="self-center text-4xl font-bold font-semibold whitespace-nowrap dark:text-dark">Interactive
+                    <br>
+                    <span class="text-xl">Geometry Genius</span> </span>
+            </a>
+            <div class="flex md:order-2">
+                <button type="button"
+                    class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-6 py-2 text-center mr-3 md:mr-0 dark:bg-blue-500  dark:focus:ring-blue-800">Blog</button>
+            </div>
+
+        </div>
+    </nav>
+<!--================================ Geometrical Areas =================================-->
+    <section class="flex flex-wrap lg:flex-nowrap gap-4  justify-center">
+
+        <div>
+            <div class="grid xs:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+
+                <div id="Triangle"
+                    class="w-72 max-w-sm bg-white border border-gray-200 rounded-lg shadow h-90 md:relative">
+                    <a href="#">
+                        <img class="p-8 rounded-t-lg block m-auto p-24 object-cover" src="images/triangle.png"
+                            alt="product image" width="243px" height="194px" />
+                    </a>
+
+                    <div class="px-5 pb-5 md:absolute md:inset-x-0 md:bottom-0">
+                        <a href="#">
+                            <h5 class="text-xl font-semibold tracking-tight text-gray-900 text-center">Triangle</h5>
+                        </a>
+                        <p class=" text-center">Area (A) = 0.5 x b x h</p>
+
+                        <div class="flex justify-center items-center flex-col ">
+
+                            <div class="flex justify-between items-center m-4">
+                                <div>
+                                    <input type="text" id="width1"
+                                        class=" bg-gray-200 mx-2 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-24 p-2.5  dark:border-gray-600 dark:placeholder-black-400  dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                        placeholder="b" required>
+                                </div>
+                                <span class="inline">cm</span>
+                                <div>
+                                    <input type="text" id="height1"
+                                        class=" bg-gray-300 mx-2 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-24 p-2.5  dark:border-gray-600 dark:placeholder-gray-400  dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                        placeholder="h" required>
+                                </div>
+                                <span class="inline">cm</span>
+
+                            </div>
+
+                            <div class="flex items-center justify-between">
+                                <button id="triangleBtn"
+                                    class="block m-auto text-white  hover:bg-blue-800  focus:outline-none focus:ring-blue-300 font-medium rounded text-sm text-center   dark:focus:ring-blue-800 bg-sky-600 w-64 py-[15px]">Calculate</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="Rectangle"
+                    class="w-72 max-w-sm bg-white border border-gray-200 rounded-lg shadow h-90 relative ">
+                    <a href="#">
+                        <img class="p-8 rounded-t-lg block m-auto p-24" src="images/rectangle.png" alt="product image"
+                            width="290px" height="194px" />
+                    </a>
+
+                    <div class="px-5 pb-5 ">
+                        <a href="#">
+                            <h5 class="text-xl font-semibold tracking-tight text-gray-900 text-center">Rectangle</h5>
+                        </a>
+                        <p class=" text-center">Area (A) = w x l</p>
+
+                        <div class="flex justify-center items-center flex-col ">
+
+                            <div class="flex justify-between items-center m-4">
+                                <div>
+                                    <input type="text" id="rectangleWidth"
+                                        class=" bg-gray-200 mx-2 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-24 p-2.5  dark:border-gray-600 dark:placeholder-black-400  dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                        placeholder="w" required>
+                                </div>
+                                <span class="inline">cm</span>
+                                <div>
+                                    <input type="text" id="rectangleHeight"
+                                        class=" bg-gray-300 mx-2 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-24 p-2.5  dark:border-gray-600 dark:placeholder-gray-400  dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                        placeholder="l" required>
+                                </div>
+                                <span class="inline">cm</span>
+
+                            </div>
+
+                            <div class="flex items-center justify-between ">
+                                <button id="rectangleBtn"
+                                    class="block m-auto text-white  hover:bg-blue-800  focus:outline-none focus:ring-blue-300 font-medium rounded text-sm text-center  dark:hover:bg-blue-700 dark:focus:ring-blue-800 bg-sky-600 w-64 py-[15px]">Calculate</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="Parallelogram"
+                    class="w-72 max-w-sm bg-white border border-gray-200 rounded-lg shadow h-90 md:relative ">
+                    <a href="#">
+                        <img class="p-8 rounded-t-lg block m-auto p-24" src="images/parallelogram.png"
+                            alt="product image" width="325px" height="194px" />
+                    </a>
+
+                    <div class="px-5 pb-5 md:absolute md:inset-x-0 md:bottom-0">
+                        <a href="#">
+                            <h5 class="text-xl font-semibold tracking-tight text-gray-900 text-center">Parallelogram
+                            </h5>
+                        </a>
+                        <p class=" text-center">Area (A) = b x h</p>
+
+                        <div class="flex justify-center items-center flex-col ">
+
+                            <div class="flex justify-between items-center m-4">
+                                <div>
+                                    <input type="text" id="parallelogramWidth"
+                                        class=" bg-gray-200 mx-2 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-24 p-2.5  dark:border-gray-600 dark:placeholder-black-400  dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                        placeholder="b" required>
+                                </div>
+                                <span class="inline">cm</span>
+                                <div>
+                                    <input type="text" id="parallelogramHeight"
+                                        class=" bg-gray-300 mx-2 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-24 p-2.5  dark:border-gray-600 dark:placeholder-gray-400  dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                        placeholder="h" required>
+                                </div>
+                                <span class="inline">cm</span>
+
+                            </div>
+
+                            <div class="flex items-center justify-between">
+                                <button id="parallelogramBtn"
+                                    class="block m-auto text-white  hover:bg-blue-800  focus:outline-none focus:ring-blue-300 font-medium rounded text-sm text-center  dark:hover:bg-blue-700 dark:focus:ring-blue-800 bg-sky-600 w-64 py-[15px]">Calculate</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="Rhombus"
+                    class="w-72 max-w-sm bg-white border border-gray-200 rounded-lg shadow h-90 relative ">
+                    <a href="#">
+                        <img class="p-8 rounded-t-lg block m-auto p-24" src="images/rhombus.png" alt="product image"
+                            width="295px" height="194px" />
+                    </a>
+
+                    <div class="px-5 pb-5 ">
+                        <a href="#">
+                            <h5 class="text-xl font-semibold tracking-tight text-gray-900 text-center">Rhombus</h5>
+                        </a>
+                        <p class=" text-center">Area (A) = 0.5 x d<sub>1</sub> x d<sub>2</sub></p>
+
+                        <div class="flex justify-center items-center flex-col ">
+
+                            <div class="flex justify-between items-center m-4">
+                                <div>
+                                    <input type="text" id="RhombusWidth"
+                                        class=" bg-gray-200 mx-2 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-24 p-2.5  dark:border-gray-600 dark:placeholder-black-400  dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                        placeholder="d1" required>
+                                </div>
+
+                                <span class="inline">cm</span>
+                                <div>
+                                    <input type="text" id="RhombusHeight"
+                                        class=" bg-gray-300 mx-2 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-24 p-2.5  dark:border-gray-600 dark:placeholder-gray-400  dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                        placeholder="d2" required>
+                                </div>
+                                <span class="inline">cm</span>
+
+                            </div>
+
+                            <div class="flex items-center justify-between">
+                                <button id="RhombusBtn"
+                                    class="block m-auto text-white  hover:bg-blue-800  focus:outline-none focus:ring-blue-300 font-medium rounded text-sm text-center  dark:hover:bg-blue-700 dark:focus:ring-blue-800 bg-sky-600 w-64 py-[15px]">Calculate</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="Pentagon"
+                    class="w-72 max-w-sm bg-white border border-gray-200 rounded-lg shadow h-90 md:relative ">
+                    <a href="#">
+                        <img class="p-8 rounded-t-lg block m-auto p-24" src="images/pentagon.png" alt="product image"
+                            width="243px" height="194px" />
+                    </a>
+
+                    <div class="px-5 pb-5 md:absolute md:inset-x-0 md:bottom-0">
+                        <a href="#">
+                            <h5 class="text-xl font-semibold tracking-tight text-gray-900 text-center">Pentagon</h5>
+                        </a>
+                        <p class=" text-center">Area (A) = 0.5 x p x b</p>
+
+                        <div class="flex justify-center items-center flex-col ">
+
+                            <div class="flex justify-between items-center m-4">
+                                <div>
+                                    <input type="text" id="PentagonWidth"
+                                        class=" bg-gray-200 mx-2 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-24 p-2.5  dark:border-gray-600 dark:placeholder-black-400  dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                        placeholder="p" required>
+                                </div>
+                                <span class="inline">cm</span>
+                                <div>
+                                    <input type="text" id="PentagonHeight"
+                                        class=" bg-gray-300 mx-2 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-24 p-2.5  dark:border-gray-600 dark:placeholder-gray-400  dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                        placeholder="b" required>
+                                </div>
+                                <span class="inline">cm</span>
+
+                            </div>
+
+                            <div class="flex items-center justify-between">
+                                <button id="PentagonBtn"
+                                    class="block m-auto text-white  hover:bg-blue-800  focus:outline-none focus:ring-blue-300 font-medium rounded text-sm text-center  dark:hover:bg-blue-700 dark:focus:ring-blue-800 bg-sky-600 w-64 py-[15px]">Calculate</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="Ellipse"
+                    class="w-72 max-w-sm bg-white border border-gray-200 rounded-lg shadow h-90 md:relative ">
+                    <a href="#">
+                        <img class="p-8 rounded-t-lg block m-auto p-24" src="images/ellipse.png" alt="product image"
+                            width="340px" height="194px" />
+                    </a>
+
+                    <div class="px-5 pb-5 lg:absolute lg:inset-x-0 lg:bottom-0">
+                        <a href="#">
+                            <h5 class="text-xl font-semibold tracking-tight text-gray-900 text-center">Ellipse</h5>
+                        </a>
+                        <p class=" text-center">Area (A) = πab</p>
+
+                        <div class="flex justify-center items-center flex-col ">
+
+                            <div class="flex justify-between items-center m-4">
+                                <div>
+                                    <input type="text" id="EllipseWidth"
+                                        class=" bg-gray-200 mx-2 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-24 p-2.5  dark:border-gray-600 dark:placeholder-black-400  dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                        placeholder="a" required>
+                                </div>
+                                <span class="inline">cm</span>
+                                <div>
+                                    <input type="text" id="EllipseHeight"
+                                        class=" bg-gray-300 mx-2 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-24 p-2.5  dark:border-gray-600 dark:placeholder-gray-400  dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                        placeholder="b" required>
+                                </div>
+                                <span class="inline">cm</span>
+
+                            </div>
+
+                            <div class="flex items-center justify-between">
+                                <button id="EllipseBtn"
+                                    class="block m-auto text-white  hover:bg-blue-800  focus:outline-none focus:ring-blue-300 font-medium rounded text-sm text-center  dark:hover:bg-blue-700 dark:focus:ring-blue-800 bg-sky-600 w-64 py-[15px]">Calculate</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!--========================== Area result showing ============================-->
+        <div>
+            <div class="w-80 max-w-sm p-4 bg-white border  rounded-lg shadow sm:p-6 text-dark h-[400px]">
+                <h5 class="mb-3 text-base font-semibold  md:text-xl  text-center">
+                    Area Calculation
+                </h5>
+                <ol id="areaContainer" class="my-4 space-y-3 list-decimal">
+                    <!-- <li > 
+                        <div class="flex items-center justify-between text-base  rounded-lg  group">
+                            <div class="flex-1 whitespace-nowrap" id="areaName">Triangle</div>
+                            <div class="flex-1 ml-3 whitespace-nowrap"> <span id="areaValue">100</span>cm<sup>2</sup></div>
+                            <button class="flex-1 ml-3 whitespace-nowrap text-white  hover:bg-blue-800 rounded text-sm text-center  dark:hover:bg-blue-700 dark:focus:ring-blue-800 bg-sky-600 w-64 p-[5px]">convert to m<sup>2</sup></button>
+
+
+                        </div>
+                    </li> -->
+
+                </ol>
+            </div>
+
+        </div>
+    </section>
+    <section class="mt-32">
+
+    </section>
+
+
+    <script src="js/index.js"></script>
+</body>
+
+</html>
